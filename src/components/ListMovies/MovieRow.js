@@ -1,5 +1,5 @@
 import React from "react";
-import { MovieRow} from './styles'
+import { MovieRow } from './styles'
 
 export default ({title, items}) => {
     return(

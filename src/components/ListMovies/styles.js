@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const MovieRow = styled.div`
     margin-bottom: 30px;
@@ -20,10 +20,11 @@ export const MovieRow = styled.div`
         display: inline-block;
         width: 150px;
         cursor: pointer;
-        margin-right: 45px;
+        margin-right: 50px;
 
         img {
-            width: 130%;
+            width: 135%;
+            height: 300px;
             transform: scale(0.9);
             transition: all ease .3s;
         }
