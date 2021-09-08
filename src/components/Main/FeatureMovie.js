@@ -2,7 +2,6 @@ import React from "react";
 import { Feature } from './styles'
 
 export default ({item}) => {
-    console.log(item)
 
     let firstDate = new Date(item.first_air_date)
     let genres = []

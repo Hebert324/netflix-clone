@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Feature = styled.section`
+export const Feature = styled.div`
     height: 100vh;
 
     .vertical {
@@ -70,7 +70,6 @@ export const Feature = styled.section`
             color: #000;
             background-color: #fff;
         }
-    }
 
         .minhaLista {
             color: #FFF;
@@ -82,8 +81,9 @@ export const Feature = styled.section`
         margin-top: 15px;
         font-size: 18px;
         color: #999;
+        
         span {
             color: #fff;
         }
     }
-`
+`    
