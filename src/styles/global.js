@@ -15,4 +15,8 @@ export default createGlobalStyle`
         color: #FFF;
         font-family: 'Roboto', sans-serif;
     }
+
+    .lists {
+        margin-top: -150px;
+    }
 `

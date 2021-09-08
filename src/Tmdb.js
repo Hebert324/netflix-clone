@@ -12,7 +12,7 @@ export default {
         return [
             {
                 slug: 'mains',
-                title: 'Pincipais',
+                title: 'Principais',
                 items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
