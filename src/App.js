@@ -3,6 +3,7 @@ import GlobalStyle from './styles/global'
 import { getHomeList, getMovieInfo } from './Tmdb'
 import MovieRow from './components/ListMovies/MovieRow'
 import FeatureMovie from './components/Main/FeatureMovie'
+import Header from './components/header/Header'
 
 export default function App() {
 
@@ -29,6 +30,8 @@ export default function App() {
   return(
     <>
     <div className="page">
+
+      <Header />
 
       {featureData && <FeatureMovie item={featureData} /> }
 
