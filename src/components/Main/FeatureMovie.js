@@ -1,7 +1,7 @@
 import React from "react";
 import { Feature } from './styles'
 
-export default ({item}) => {
+export default function feature({item}) {
 
     let firstDate = new Date(item.first_air_date)
     let genres = []
@@ -25,8 +25,8 @@ export default ({item}) => {
                     </div>
                     <div className="description">{item.overview}</div>
                     <div className="buttons">
-                        <a href={`https://www.youtube.com/results?search_query=${item.original_name}+trailer`} target="_blank" className="assistir">▶ Assistir</a>
-                        <a href={`https://www.youtube.com/results?search_query=${item.original_name}+trailer`} target="_blank" className="minhaLista">+ Minha Lista</a>
+                        <a href={`https://www.youtube.com/results?search_query=${item.original_name}+trailer`} rel="noreferrer" target="_blank" className="assistir">▶ Assistir</a>
+                        <a href={`https://www.youtube.com/results?search_query=${item.original_name}+trailer`} rel="noreferrer" target="_blank" className="minhaLista">+ Minha Lista</a>
                     </div>
                     <div className="genres"><strong><span>Gêneros:</span> {genres.join(', ')}</strong></div>
                 </div>

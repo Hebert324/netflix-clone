@@ -4,7 +4,7 @@ import Tmdb from './Tmdb'
 import MovieRow from './components/ListMovies/MovieRow'
 import FeatureMovie from './components/Main/FeatureMovie'
 
-export default () => {
+export default function App() {
 
   const [movieList, setMovieList] = useState([])
   const [featureData, setFeatureData] = useState(null)
