@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GlobalStyle from './styles/global'
-import Tmdb from './Tmdb'
+import { getHomeList, getMovieInfo } from './Tmdb'
 import MovieRow from './components/ListMovies/MovieRow'
 import FeatureMovie from './components/Main/FeatureMovie'
 
@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     const loadAll = async () => {
       // Pegando a lista dos conteúdos
-      let list = await Tmdb.getHomeList()
+      let list = await getHomeList()
       setMovieList(list)
 
       // Pegando o Featured
@@ -20,7 +20,7 @@ export default function App() {
       let randomChosen = Math.floor(Math.random() * (mains[0].items.results.length - 1))
       let chosen = mains[0].items.results[randomChosen]
 
-      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
+      let chosenInfo = await getMovieInfo(chosen.id, 'tv')
       setFeatureData(chosenInfo)
     }
     loadAll()
