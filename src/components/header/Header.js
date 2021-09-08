@@ -7,7 +7,7 @@ export default function header() {
       <div className="logo">
       <a href="#"><img src='https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png' alt='logo' /></a>
       </div>
-      <div class="user">
+      <div className="user">
       <a href="#"><img src='https://avatars.githubusercontent.com/u/70274409?v=4' alt='user' /></a>
       </div>
     </Header>
