@@ -57,6 +57,10 @@ export default function App() {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer>
+      Desenvolvido por <a rel="noreferrer" target="_blank" href="https://github.com/Hebert324/netflix-clone">Hebert Rocha</a> <span role="img" aria-label="coração">❤️</span><br /> Este site não e oficial e apenas um clone da Netflix <br />
+      </footer>
     </div>
     <GlobalStyle />
     </>

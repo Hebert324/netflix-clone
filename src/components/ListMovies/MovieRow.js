@@ -5,6 +5,14 @@ export default function movieRow({title, items}){
     return(
         <MovieRow>
             <h2>{title}</h2>
+
+            <div className="left-move">
+            </div>
+
+            <div className="right-move">
+            
+            </div>
+
             <div className="listArea">
                 <div className="list">
                     {items.results.length > 0 && items.results.map((item, key) => (

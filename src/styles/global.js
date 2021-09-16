@@ -18,4 +18,19 @@ export default createGlobalStyle`
     .lists {
         margin-top: -150px;
     }
+
+    footer {
+        margin: 50px 0;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: color ease .4s;
+        }
+
+        a:hover {
+            color: #E50914;
+        }
+    }
 `
