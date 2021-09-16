@@ -3,12 +3,13 @@ import GlobalStyle from './styles/global'
 import { getHomeList, getMovieInfo } from './Tmdb'
 import MovieRow from './components/ListMovies/MovieRow'
 import FeatureMovie from './components/Main/FeatureMovie'
-import Header from './components/header/Header'
+import Header from './components/Header/Header'
 
 export default function App() {
 
   const [movieList, setMovieList] = useState([])
   const [featureData, setFeatureData] = useState(null)
+  const [ blackHeader, setBlackHeader ] = useState(false)
 
   useEffect(() => {
     const loadAll = async () => {
@@ -27,11 +28,27 @@ export default function App() {
     loadAll()
   }, [])
 
+  useEffect(() => {
+    const scrollListener = () => {
+      if(window.scrollY > 15) {
+        setBlackHeader(true)
+      } else {
+        setBlackHeader(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener)
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
+  }, [])
+
   return(
     <>
     <div className="page">
 
-      <Header />
+      <Header black={blackHeader} />
 
       {featureData && <FeatureMovie item={featureData} /> }
 

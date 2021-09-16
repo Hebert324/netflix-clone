@@ -12,6 +12,7 @@ export const Header = styled.div`
     justify-content: space-between;
     padding: 0 30px;
     background: transparent;
+    transition: all ease .5s;
 
     .logo img{
         width: 90px;

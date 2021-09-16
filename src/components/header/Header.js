@@ -1,10 +1,10 @@
 import React from "react";
 import { Header, Black } from './styles'
 
-export default function header() {
+export default function header({black}) {
   return(
         <Black>
-          <Header className="">
+          <Header className={black ? 'black' : ''}>
             <div className="logo">
             <a href="/" rel="noreferrer"><img src='https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png' alt='logo' /></a>
             </div>
