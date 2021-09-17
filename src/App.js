@@ -62,7 +62,7 @@ export default function App() {
       Desenvolvido por <a rel="noreferrer" target="_blank" href="https://github.com/Hebert324/netflix-clone">Hebert Rocha</a> <span role="img" aria-label="coração">❤️</span><br /> Este site não e oficial e apenas um clone da Netflix <br />
       </footer>
 
-      <div className="loading"><img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="Carregando" /></div>
+      {/* <div className="loading"><img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="Carregando" /></div> */}
     </div>
     <GlobalStyle />
     </>
