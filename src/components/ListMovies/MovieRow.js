@@ -3,14 +3,23 @@ import { MovieRow } from './styles'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 export default function MovieRow2({title, items}){
-    const [scrollx, setScrollx] = useState(-200)
+    const [scrollx, setScrollx] = useState(0)
 
     function handleLeftArrow() {
-        
+        let x = scrollx + Math.round(window.innerWidth / 2)
+        if(x > 0) {
+            x = 0
+        }
+        setScrollx(x)
     }
 
     function handleRightArrow() {
-        
+        let x = scrollx - Math.round(window.innerWidth / 2)
+        let listw = items.results.length * 232
+        if((window.innerWidth - listw) > x) {
+            x = (window.innerWidth - listw)
+        }
+        setScrollx(x)
     }
 
     return(

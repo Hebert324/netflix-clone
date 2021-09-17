@@ -13,6 +13,10 @@ export const MovieRow = styled.div`
         padding-left: 30px;
     }
 
+    .list {
+        transition: all ease .5s;
+    }
+
     .item{
         display: inline-block;
         width: 150px;
@@ -52,7 +56,8 @@ export const MovieRow = styled.div`
         right: 0;
     }
 
-    &:hover .right-arrow{
+    &:hover .right-arrow,
+    &:hover .left-arrow{
         opacity: 1;
     }
 `
