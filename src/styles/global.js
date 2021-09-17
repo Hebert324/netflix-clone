@@ -22,6 +22,7 @@ export default createGlobalStyle`
     footer {
         margin: 50px 0;
         text-align: center;
+        font-weight: bold;
 
         a {
             text-decoration: none;

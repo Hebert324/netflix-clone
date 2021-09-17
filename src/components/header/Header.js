@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Black } from './styles'
 
+
 export default function header({black}) {
   return(
         <Black>

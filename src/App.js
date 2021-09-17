@@ -3,13 +3,13 @@ import GlobalStyle from './styles/global'
 import { getHomeList, getMovieInfo } from './Tmdb'
 import MovieRow from './components/ListMovies/MovieRow'
 import FeatureMovie from './components/Main/FeatureMovie'
-import Header from './components/Header/Header'
+import Header from './components/header/Header'
 
 export default function App() {
 
   const [movieList, setMovieList] = useState([])
   const [featureData, setFeatureData] = useState(null)
-  const [ blackHeader, setBlackHeader ] = useState(false)
+  const [blackHeader, setBlackHeader] = useState(false)
 
   useEffect(() => {
     const loadAll = async () => {

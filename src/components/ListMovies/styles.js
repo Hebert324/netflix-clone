@@ -5,6 +5,7 @@ export const MovieRow = styled.div`
 
     h2 {
         margin-left: 30px;
+        margin-bottom: 15px;
     }
 
     .listArea {
@@ -12,26 +13,46 @@ export const MovieRow = styled.div`
         padding-left: 30px;
     }
 
-    .list {
-        width: 99999999px;
-    }
-
     .item{
         display: inline-block;
         width: 150px;
         cursor: pointer;
-        margin-right: 50px;
+        margin-right: 70px;
+        margin-left: 10px;
 
         img {
             width: 135%;
             height: 300px;
-            transform: scale(0.9);
+            margin-right: 10px;
             transition: all ease .3s;
-        }
-        
-        img:hover {
-            transform: scale(1);
         }
     }
 
+    .left-arrow, 
+    .right-arrow {
+        position: absolute;
+        width: 40px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transition: all ease .4s;
+    }
+
+    .left-arrow {
+        left: 0;
+    }
+
+    .right-arrow {
+        right: 0;
+    }
+
+    &:hover .right-arrow{
+        opacity: 1;
+    }
 `
