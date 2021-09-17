@@ -15,7 +15,7 @@ export default function App() {
     const loadAll = async () => {
       // Pegando a lista dos conteúdos
       let list = await getHomeList()
-      // setMovieList(list)
+      setMovieList(list)
 
       // Pegando o Featured
       let mains = list.filter(i => i.slug === 'mains')
@@ -23,7 +23,7 @@ export default function App() {
       let chosen = mains[0].items.results[randomChosen]
 
       let chosenInfo = await getMovieInfo(chosen.id, 'tv')
-      // setFeatureData(chosenInfo)
+      setFeatureData(chosenInfo)
     }
     loadAll()
   }, [])
