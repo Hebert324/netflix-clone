@@ -34,4 +34,16 @@ export default createGlobalStyle`
             color: #E50914;
         }
     }
+
+    .loading{
+        position: fixed;
+        z-index: 99;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
 `
