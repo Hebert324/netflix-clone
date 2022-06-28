@@ -1,6 +1,6 @@
 <h1 align="center">Clone Da Netflix</h1>
 
-<img alt="gif" src="https://github.com/Hebert324/Web.finances/blob/main/gif/web.finance.gif">
+<img alt="gif" src="https://github.com/Hebert324/netflix-clone/blob/main/src/assets/clone%20da%20netflix.gif">
 
 ## Sobre o projeto:
 
